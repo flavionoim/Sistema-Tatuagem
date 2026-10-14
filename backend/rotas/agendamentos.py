@@ -25,7 +25,7 @@ class Agendamento(BaseModel):
 
     # POST /agendamentos — cadastra um novo agendamento
 # POST /agendamentos — cadastra um novo agendamento
-@router.get("")
+@router.post("")
 def criar_agendamento(agendamento: Agendamento):
     conn = conectar()
     cursor = conn.cursor()
@@ -41,7 +41,7 @@ def criar_agendamento(agendamento: Agendamento):
     return {"mensagem": "Agendamento cadastrado com sucesso", "idagendamento": novo_id}
 
     # GET /agendamentos — lista todos os agendamentos, já com nome do cliente e do tatuador
-@router.post("")
+@router.get("")
 def listar_agendamentos():
     conn = conectar()
     cursor = conn.cursor(dictionary=True)

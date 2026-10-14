@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <title>Agendamentos — Estúdio de Tatuagem</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Global.css">
 </head>
-<body class="container py-4">
 
-  <nav class="navbar navbar-dark bg-dark mb-4">
-    <div class="container">
-      <span class="navbar-brand">Estúdio de Tatuagem</span>
+<body class="">
+
+  <nav class="">
+    <div class="">
+      <span class="">Estúdio de Tatuagem</span>
       <div>
-        <a href="clientes.html" class="text-light me-3">Clientes</a>
-        <a href="senioridade.html" class="text-light me-3">Senioridade</a>
-        <a href="estilos.html" class="text-light me-3">Estilos</a>
-        <a href="tatuadores.html" class="text-light me-3">Tatuadores</a>
-        <a href="agendamentos.html" class="text-light me-3">Agendamentos</a>
-        <button onclick="sair()" class="btn btn-outline-light btn-sm">Sair</button>
+        <a href="dashboard.html" class="">Dashboard</a>
+        <a href="clientes.html" class="">Clientes</a>
+        <a href="senioridade.html" class="">Senioridade</a>
+        <a href="estilos.html" class="">Estilos</a>
+        <a href="tatuadores.html" class="">Tatuadores</a>
+        <a href="agendamentos.html" class="">Agendamentos</a>
+        <button onclick="sair()" class="">Sair</button>
       </div>
     </div>
   </nav>
 
-  <h1>Agendamentos</h1>
+  <div class="">
+    <h1>Agendamentos</h1>
 
-  <!-- Formulário para cadastrar novo agendamento -->
-  <form id="form-agendamento" class="row g-2 mt-2 mb-4">
-    <div class="col-md-3">
-      <select id="idcliente" class="form-select" required>
-        <option value="">Cliente...</option>
-      </select>
-    </div>
-    <div class="col-md-3">
-      <select id="idtatuador" class="form-select" required>
-        <option value="">Tatuador...</option>
-      </select>
-    </div>
-    <div class="col-md-2">
-      <input type="date" id="dataagendamento" class="form-control" required>
-    </div>
-    <div class="col-md-2">
-      <input type="time" id="horaagendamento" class="form-control" required>
-    </div>
-    <div class="col-md-2">
-      <input type="number" id="valortatuagem" class="form-control" placeholder="Valor (R$)" step="0.01" min="0">
-    </div>
-    <div class="col-md-12">
-      <textarea id="descricaotatuagem" class="form-control" placeholder="Descrição da tatuagem"></textarea>
-    </div>
-    <div class="col-md-4">
-  <label class="form-label">Desenho aprovado (imagem)</label>
-  <input type="file" id="desenho" class="form-control" accept="image/*">
-</div>
+    <!-- Formulário para cadastrar novo agendamento -->
+    <form id="form-agendamento" class="">
+      <div class="">
+        <select id="idcliente" class="" required>
+          <option value="">Cliente...</option>
+        </select>
+      </div>
+      <div class="">
+        <select id="idtatuador" class="" required>
+          <option value="">Tatuador...</option>
+        </select>
+      </div>
+      <div class="">
+        <input type="date" id="dataagendamento" class="" required>
+      </div>
+      <div class="">
+        <input type="time" id="horaagendamento" class="" required>
+      </div>
+      <div class="">
+        <input type="number" id="valortatuagem" class="" placeholder="Valor (R$)" step="0.01" min="0">
+      </div>
+      <div class="">
+        <textarea id="descricaotatuagem" class="" placeholder="Descrição da tatuagem"></textarea>
+      </div>
+      <div class="">
+        <label class="">Desenho aprovado (imagem)</label>
+        <input type="file" id="desenho" class="" accept="image/*">
+      </div>
 
-    <!-- Esse bloco começa escondido — só aparece quando estamos editando um agendamento existente -->
-    <div class="col-md-3" id="bloco-status" style="display: none;">
-      <select id="status" class="form-select">
-        <option value="pendente">Pendente</option>
-        <option value="confirmado">Confirmado</option>
-        <option value="concluido">Concluído</option>
-        <option value="cancelado">Cancelado</option>
-      </select>
-    </div>
+      <!-- Esse bloco começa escondido — só aparece quando estamos editando um agendamento existente -->
+      <div class="" id="bloco-status" style="display: none;">
+        <select id="status" class="">
+          <option value="pendente">Pendente</option>
+          <option value="confirmado">Confirmado</option>
+          <option value="concluido">Concluído</option>
+          <option value="cancelado">Cancelado</option>
+        </select>
+      </div>
 
-    <div class="col-md-2">
-      <button id="btn-submit-agendamento" type="submit" class="btn btn-primary w-100">Cadastrar</button>
-    </div>
-  </form>
+      <div class="">
+        <button id="btn-submit-agendamento" type="submit" class="">Cadastrar</button>
+      </div>
+    </form>
 
-  <!-- Tabela onde os agendamentos vão aparecer -->
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Cliente</th>
-        <th>Tatuador</th>
-        <th>Data</th>
-        <th>Hora</th>
-        <th>Valor</th>
-        <th>Status</th>
-        <th>Desenho</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody id="corpo-tabela">
-      <!-- os agendamentos vão aparecer aqui -->
-    </tbody>
-  </table>
+    <!-- Tabela onde os agendamentos vão aparecer -->
+    <table class="">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cliente</th>
+          <th>Tatuador</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Valor</th>
+          <th>Status</th>
+          <th>Desenho</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+        <!-- os agendamentos vão aparecer aqui -->
+      </tbody>
+    </table>
+  </div>
 
   <script src="js/auth.js"></script>
   <script src="js/agendamentos.js"></script>
 
 </body>
+
 </html>
