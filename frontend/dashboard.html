@@ -3,43 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Dashboard — Estúdio de Tatuagem</title>
+  <link rel="stylesheet" href="../Global.css">
 </head>
 <body>
 
-  <nav class="">
-    <div class="">
-      <span class="">Estúdio de Tatuagem</span>
-      <button onclick="sair()" class="">Sair</button>
+  <nav>
+    <div>
+      <span>Estúdio de Tatuagem</span>
+      <button onclick="sair()">Sair</button>
     </div>
   </nav>
 
-  <div class="">
-    <h1 class="">Painel</h1>
-    <div class="">
-      <div class="">
-        <a href="clientes.html" class="">Clientes</a>
+  <div class="div-container">
+    <h1>Painel</h1>
+    <div class="dashboard-grid">
+      <div class="dashboard-card">
+        <a href="clientes.html">Clientes</a>
       </div>
-      <div class="">
-        <a href="tatuadores.html" class="">Tatuadores</a>
+      <div class="dashboard-card">
+        <a href="tatuadores.html">Tatuadores</a>
       </div>
-      <div class="">
-        <a href="agendamentos.html" class="">Agendamentos</a>
+      <div class="dashboard-card">
+        <a href="agendamentos.html">Agendamentos</a>
       </div>
-      <div class="">
-        <a href="senioridade.html" class="">Senioridade</a>
+      <div class="dashboard-card">
+        <a href="senioridade.html">Senioridade</a>
       </div>
-      <div class="">
-        <a href="estilos.html" class="">Estilos</a>
+      <div class="dashboard-card">
+        <a href="estilos.html">Estilos</a>
       </div>
-      <div class="">
-        <a href="cadastro.html" class="">Novo Funcionário</a>
+      <div class="dashboard-card">
+        <a href="cadastro.html">Novo Funcionário</a>
       </div>
     </div>
   </div>
 
   <script src="js/auth.js"></script>
   <script>
-    protegerPagina()   // o dashboard também é protegido — sem login, não entra
+    protegerPagina()
   </script>
 
 </body>

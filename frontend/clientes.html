@@ -3,63 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Clientes — Estúdio de Tatuagem</title>
+  <link rel="stylesheet" href="../Global.css">
 </head>
-<body class="">
-  <nav class="">
-    <div class="">
-      <span class="">Estúdio de Tatuagem</span>
+<body>
+  <nav>
+    <div>
+      <span>Estúdio de Tatuagem</span>
       <div>
-        <a href="dashboard.html" class="">Dashboard</a>
-        <a href="clientes.html" class="">Clientes</a>
-        <a href="senioridade.html" class="">Senioridade</a>
-        <a href="estilos.html" class="">Estilos</a>
-        <a href="tatuadores.html" class="">Tatuadores</a>
-        <a href="agendamentos.html" class="">Agendamentos</a>
-        <button onclick="sair()" class="">Sair</button>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="senioridade.html">Senioridade</a>
+        <a href="estilos.html">Estilos</a>
+        <a href="tatuadores.html">Tatuadores</a>
+        <a href="agendamentos.html">Agendamentos</a>
+        <button onclick="sair()">Sair</button>
       </div>
     </div>
   </nav>
-  <h1>Clientes</h1>
 
-  <!-- Formulário para cadastrar novo cliente -->
-  <form id="form-cliente" class="">
-    <div class="">
-      <input type="text" id="nome" class="" placeholder="Nome" required>
-    </div>
-    <div class="">
-      <input type="text" id="cpf" class="" placeholder="CPF (só números)" required>
-    </div>
-    <div class="">
-      <input type="text" id="telefone" class="" placeholder="Telefone">
-    </div>
-    <div class="">
-      <input type="text" id="cidade" class="" placeholder="Cidade">
-    </div>
-    <div class="">
-      <input type="text" id="uf" class="" placeholder="UF" maxlength="2">
-    </div>
-    <div class="">
-      <button id="btn-submit-cliente" type="submit" class="">Cadastrar</button>
-    </div>
-  </form>
+  <div class="div-container">
+    <h1>Clientes</h1>
 
-  <!-- Tabela onde os clientes vão aparecer -->
-  <table class="">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>CPF</th>
-        <th>Telefone</th>
-        <th>Cidade</th>
-        <th>UF</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody id="corpo-tabela">
-      <!-- os clientes vão aparecer aqui -->
-    </tbody>
-  </table>
+    <form id="form-cliente">
+      <div>
+        <input type="text" id="nome" placeholder="Nome" required>
+      </div>
+      <div>
+        <input type="text" id="cpf" placeholder="CPF (só números)" required>
+      </div>
+      <div>
+        <input type="text" id="telefone" placeholder="Telefone">
+      </div>
+      <div>
+        <input type="text" id="cidade" placeholder="Cidade">
+      </div>
+      <div>
+        <input type="text" id="uf" placeholder="UF" maxlength="2">
+      </div>
+      <div>
+        <button id="btn-submit-cliente" type="submit">Cadastrar</button>
+      </div>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Telefone</th>
+          <th>Cidade</th>
+          <th>UF</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+      </tbody>
+    </table>
+  </div>
 
   <script src="js/auth.js"></script>
   <script src="js/clientes.js"></script>

@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <title>Agendamentos — Estúdio de Tatuagem</title>
   <link rel="stylesheet" href="../Global.css">
 </head>
+<body>
 
-<body class="">
-
-  <nav class="">
-    <div class="">
-      <span class="">Estúdio de Tatuagem</span>
+  <nav>
+    <div>
+      <span>Estúdio de Tatuagem</span>
       <div>
-        <a href="dashboard.html" class="">Dashboard</a>
-        <a href="clientes.html" class="">Clientes</a>
-        <a href="senioridade.html" class="">Senioridade</a>
-        <a href="estilos.html" class="">Estilos</a>
-        <a href="tatuadores.html" class="">Tatuadores</a>
-        <a href="agendamentos.html" class="">Agendamentos</a>
-        <button onclick="sair()" class="">Sair</button>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="senioridade.html">Senioridade</a>
+        <a href="estilos.html">Estilos</a>
+        <a href="tatuadores.html">Tatuadores</a>
+        <a href="agendamentos.html">Agendamentos</a>
+        <button onclick="sair()">Sair</button>
       </div>
     </div>
   </nav>
 
-  <div class="">
+  <div class="div-container">
     <h1>Agendamentos</h1>
 
-    <!-- Formulário para cadastrar novo agendamento -->
-    <form id="form-agendamento" class="">
-      <div class="">
-        <select id="idcliente" class="" required>
+    <form id="form-agendamento">
+      <div>
+        <select id="idcliente" required>
           <option value="">Cliente...</option>
         </select>
       </div>
-      <div class="">
-        <select id="idtatuador" class="" required>
+      <div>
+        <select id="idtatuador" required>
           <option value="">Tatuador...</option>
         </select>
       </div>
-      <div class="">
-        <input type="date" id="dataagendamento" class="" required>
+      <div>
+        <input type="date" id="dataagendamento" required>
       </div>
-      <div class="">
-        <input type="time" id="horaagendamento" class="" required>
+      <div>
+        <input type="time" id="horaagendamento" required>
       </div>
-      <div class="">
-        <input type="number" id="valortatuagem" class="" placeholder="Valor (R$)" step="0.01" min="0">
+      <div>
+        <input type="number" id="valortatuagem" placeholder="Valor (R$)" step="0.01" min="0">
       </div>
-      <div class="">
-        <textarea id="descricaotatuagem" class="" placeholder="Descrição da tatuagem"></textarea>
+      <div>
+        <textarea id="descricaotatuagem" placeholder="Descrição da tatuagem"></textarea>
       </div>
-      <div class="">
-        <label class="">Desenho aprovado (imagem)</label>
-        <input type="file" id="desenho" class="" accept="image/*">
+      <div>
+        <label style="color: #c4c4cc; font-size: 0.9rem;">Desenho aprovado (imagem)</label>
+        <input type="file" id="desenho" accept="image/*">
       </div>
 
-      <!-- Esse bloco começa escondido — só aparece quando estamos editando um agendamento existente -->
-      <div class="" id="bloco-status" style="display: none;">
-        <select id="status" class="">
+      <div id="bloco-status" style="display: none;">
+        <select id="status">
           <option value="pendente">Pendente</option>
           <option value="confirmado">Confirmado</option>
           <option value="concluido">Concluído</option>
@@ -66,13 +62,12 @@
         </select>
       </div>
 
-      <div class="">
-        <button id="btn-submit-agendamento" type="submit" class="">Cadastrar</button>
+      <div>
+        <button id="btn-submit-agendamento" type="submit">Cadastrar</button>
       </div>
     </form>
 
-    <!-- Tabela onde os agendamentos vão aparecer -->
-    <table class="">
+    <table>
       <thead>
         <tr>
           <th>ID</th>
@@ -87,7 +82,6 @@
         </tr>
       </thead>
       <tbody id="corpo-tabela">
-        <!-- os agendamentos vão aparecer aqui -->
       </tbody>
     </table>
   </div>
@@ -96,5 +90,4 @@
   <script src="js/agendamentos.js"></script>
 
 </body>
-
 </html>

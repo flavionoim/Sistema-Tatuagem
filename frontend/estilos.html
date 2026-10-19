@@ -3,46 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Estilos — Estúdio de Tatuagem</title>
+  <link rel="stylesheet" href="../Global.css">
 </head>
-<body class="">
+<body>
 
-  <nav class="">
-    <div class="">
-      <span class="">Estúdio de Tatuagem</span>
+  <nav>
+    <div>
+      <span>Estúdio de Tatuagem</span>
       <div>
-        <a href="dashboard.html" class="">Dashboard</a>
-        <a href="clientes.html" class="">Clientes</a>
-        <a href="senioridade.html" class="">Senioridade</a>
-        <a href="estilos.html" class="">Estilos</a>
-        <a href="tatuadores.html" class="">Tatuadores</a>
-        <a href="agendamentos.html" class="">Agendamentos</a>
-        <button onclick="sair()" class="">Sair</button>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="senioridade.html">Senioridade</a>
+        <a href="estilos.html">Estilos</a>
+        <a href="tatuadores.html">Tatuadores</a>
+        <a href="agendamentos.html">Agendamentos</a>
+        <button onclick="sair()">Sair</button>
       </div>
     </div>
   </nav>
 
-  <h1>Estilos</h1>
+  <div class="div-container">
+    <h1>Estilos</h1>
 
-  <form id="form-estilo" class="">
-    <div class="">
-      <input type="text" id="descricao" class="" placeholder="Descrição (ex: Blackwork)" required>
-    </div>
-    <div class="">
-      <button id="btn-submit-estilo" type="submit" class="">Cadastrar</button>
-    </div>
-  </form>
+    <form id="form-estilo">
+      <div>
+        <input type="text" id="descricao" placeholder="Descrição (ex: Blackwork)" required>
+      </div>
+      <div>
+        <button id="btn-submit-estilo" type="submit">Cadastrar</button>
+      </div>
+    </form>
 
-  <table class="">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Descrição</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody id="corpo-tabela">
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+      </tbody>
+    </table>
+  </div>
 
   <script src="js/auth.js"></script>
   <script src="js/estilos.js"></script>
